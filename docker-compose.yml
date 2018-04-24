@@ -1,0 +1,13 @@
+version: '3'
+services:
+  racktables:
+    image: "cent7-racktables"
+    restart: always
+    container_name: racktables.sca-domain.com
+    hostname: racktables
+    domainname: sca-domain.com
+    network_mode: bridge
+    ports:
+      - 8082:80
+    volumes:
+      - /srv/docker_data/racktables.sca-domain.com:/var/www/html
