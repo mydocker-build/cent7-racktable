@@ -22,6 +22,9 @@ RUN yum -y update && \
 	php72u-mbstring \
 	php72u-bcmath \
 	php72u-json \
+	php72u-ldap \
+	php72u-snmp \
+	php72u-common \
 	wget \
 	httpd &&\
     yum clean all && rm -rf /var/cache/yum
